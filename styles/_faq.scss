@@ -1,0 +1,38 @@
+
+#faq{
+    span{
+        position: relative;
+        top: 1rem;
+        border-width: .4rem;
+        border-style: solid;
+        border-color: rgb(0, 0, 0) transparent transparent transparent;
+        transform: rotate(1);
+        transform-origin: 2rem 50%;
+        transition: .25s transform ease;
+    }
+    cursor: pointer;
+    height: 40rem;
+    color: $white;
+    text-align: center;
+    background-color: $blue;
+    padding: 1rem;
+    h2{
+        margin: 2rem;
+        font-weight: 700;
+    }
+    .pop{
+        transition: 10s;  
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        height: auto;
+        padding: 10px;
+        background-color: #596672;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    #faq{height: 30rem;}
+}
