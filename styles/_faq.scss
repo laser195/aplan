@@ -38,9 +38,7 @@
     50%{transform: rotate(180deg);}
 }
 
-@media only screen and (max-width: 600px){
-    #faq{height: 30rem;}
-}
+
 .show {
      overflow: hidden;
     -webkit-transition: height 5000ms ease-in-out;
@@ -48,5 +46,11 @@
     -o-transition: height 1s ease-in-out;
     transition: height 500ms ease-in-out;
     background-color: #596672;
-    height:200px;
+    height:60px;
+}
+@media only screen and (max-width: 600px){
+    #faq{height: 30rem;}
+    .show {
+       height:200px;
+   }
 }

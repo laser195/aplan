@@ -253,18 +253,21 @@
     transform: rotate(180deg);
   }
 }
-@media only screen and (max-width: 600px) {
-  #faq {
-    height: 30rem;
-  }
-}
 .show {
   overflow: hidden;
   transition: height 500ms ease-in-out;
   background-color: #596672;
-  height: 200px;
+  height: 60px;
 }
 
+@media only screen and (max-width: 600px) {
+  #faq {
+    height: 30rem;
+  }
+  .show {
+    height: 200px;
+  }
+}
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11192,11 +11195,11 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 html {
   background-image: linear-gradient(-45deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(255, 53, 127) 100%);
+  overflow-x: hidden;
 }
 
 body {
