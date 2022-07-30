@@ -262,7 +262,7 @@
   overflow: hidden;
   transition: height 500ms ease-in-out;
   background-color: #596672;
-  height: 60px;
+  height: 200px;
 }
 
 /*!
@@ -11192,6 +11192,7 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 html {
