@@ -6,9 +6,10 @@
         border-width: .4rem;
         border-style: solid;
         border-color: rgb(0, 0, 0) transparent transparent transparent;
-        transform: rotate(1);
-        transform-origin: 2rem 50%;
-        transition: .25s transform ease;
+        display: block;
+        width: 4px;
+        height: 4px;
+        transition: 0.5s ease;
     }
     cursor: pointer;
     height: 40rem;
@@ -16,23 +17,36 @@
     text-align: center;
     background-color: $blue;
     padding: 1rem;
+    
     h2{
         margin: 2rem;
         font-weight: 700;
     }
-    .pop{
-        transition: 10s;  
-    }
-    .hide{
-        display: none;
-    }
-    .show{
-        height: auto;
-        padding: 10px;
-        background-color: #596672;
 
+    .hide{
+        transition: height 500ms ease-in-out;
+        background-color: #596672;
+        height: 0;
+        overflow: hidden;
     }
+    
 }
+.rotate{
+    transform: rotate(-180deg);
+}
+@keyframes twist {
+    50%{transform: rotate(180deg);}
+}
+
 @media only screen and (max-width: 600px){
     #faq{height: 30rem;}
+}
+.show {
+     overflow: hidden;
+    -webkit-transition: height 5000ms ease-in-out;
+    -moz-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    transition: height 500ms ease-in-out;
+    background-color: #596672;
+    height:60px;
 }

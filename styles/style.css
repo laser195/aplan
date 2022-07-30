@@ -222,31 +222,49 @@
   border-width: 0.4rem;
   border-style: solid;
   border-color: rgb(0, 0, 0) transparent transparent transparent;
-  transform: rotate(1);
-  transform-origin: 2rem 50%;
-  transition: 0.25s transform ease;
+  display: block;
+  width: 4px;
+  height: 4px;
+  transition: 0.5s ease;
 }
 #faq h2, #faq .h2 {
   margin: 2rem;
   font-weight: 700;
 }
-#faq .pop {
-  transition: 10s;
-}
 #faq .hide {
-  display: none;
-}
-#faq .show {
-  height: auto;
-  padding: 10px;
+  transition: height 500ms ease-in-out;
   background-color: #596672;
+  height: 0;
+  overflow: hidden;
 }
 
+.rotate {
+  transform: rotate(-180deg);
+}
+
+@-webkit-keyframes twist {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes twist {
+  50% {
+    transform: rotate(180deg);
+  }
+}
 @media only screen and (max-width: 600px) {
   #faq {
     height: 30rem;
   }
 }
+.show {
+  overflow: hidden;
+  transition: height 500ms ease-in-out;
+  background-color: #596672;
+  height: 60px;
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
